@@ -4,6 +4,16 @@ require 'pry-byebug'
 
 def fibonacci(n)
   # your code here :)
+  if n < 0
+    return 0
+  end
+  if n == 1
+    return 1
+  elsif n == 2
+    return 1
+  else
+    return fibonacci(n - 1) + fibonacci(n - 2)
+  end
 end
 
 Pry.start
