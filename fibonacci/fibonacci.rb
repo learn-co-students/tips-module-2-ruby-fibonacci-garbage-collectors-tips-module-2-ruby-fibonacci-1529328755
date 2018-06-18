@@ -14,6 +14,7 @@ require 'pry-byebug'
 #   else
 #     until counter == n
 #       var = x[-1] + x[-2]
+#       x.shift
 #       x << var
 #       counter +=1
 #     end
